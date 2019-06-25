@@ -1,0 +1,11 @@
+export GO_SERVER_PORT=8153
+export GO_SERVER_SSL_PORT=8154
+export SERVER_MAX_PERM_GEN=512m
+export SERVER_MAX_MEM=1200m
+export SERVER_MEM=256m
+export GO_CONFIG_DIR=/tmp/go
+export SERVER_WORK_DIR=/var/lib/go-server
+export GO_SERVER_SYSTEM_PROPERTIES="-Dserver.quote='contains-quote-\"-here' -Dfoo=bar -Dserver.spaces='a b c' -Dserver.spaces2=\"x y z\" -Dgocd.log.system.properties.on.startup=true -Dserver.carriage-return=\"foo\nbar\""
+export JAVA_HOME=/tmp/java-home
+#export GO_JAVA_HOME=/tmp/go-java-home
+export GITHUB_USER=bob

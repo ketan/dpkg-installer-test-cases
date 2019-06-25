@@ -1,0 +1,12 @@
+export GO_SERVER_URL=https://127.0.0.1:8154/go
+export AGENT_WORK_DIR=/var/lib/${SERVICE_NAME:-go-agent}
+export AGENT_MEM=200m
+export AGENT_MAX_MEM=400m
+export AGENT_BOOTSTRAPPER_ARGS='-sslVerificationMode NONE'
+export JAVA_HOME=/tmp/java-home
+#export GO_JAVA_HOME=/tmp/go-java-home
+export GO_AGENT_SYSTEM_PROPERTIES="-Dagent.foo=bar -Dagent.x=y -Dagent.spaces='a b c' -Dgocd.log.system.properties.on.startup=true -Dagent.carriage-return=\"foo\nbar\" -Dserver.quote='contains-quote-\"-here'"
+export AGENT_BOOTSTRAPPER_JVM_ARGS="-Dbootstrapper.foo=bar -Dbootstrapper.x=y -Dbootstrapper.spaces='a b c' -Dgocd.log.system.properties.on.startup=true -Dbootstrapper.carriage-return=\"foo\nbar\" -Dserver.quote='contains-quote-\"-here'"
+export EXPORT_ME=true
+export EXPORT_ME_TOO="foo\nbar"
+export M2_HOME=/tmp/m2
